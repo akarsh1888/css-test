@@ -1,0 +1,62 @@
+.card-model {
+  background: #fff;
+  border-radius: 5px;
+  .svg-wrap {
+    border-radius: 5px;
+  }
+
+  .description {
+    position: relative;
+    border: 2px solid #f4f4f4;
+    width: 82%;
+
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 22px;
+      letter-spacing: 1px;
+      color: #222;
+    }
+
+    p {
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 26px;
+      letter-spacing: 0.5px;
+      color: #444444;
+    }
+    .icons-list {
+      .icon {
+        margin-right: 1.5rem;
+        height: 36px;
+        width: 38px;
+        border-radius: 4px;
+        background: #444444;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0rem;
+      right: 0rem;
+      border-top-left-radius: 100%;
+      width: 45.01px;
+      height: 45.01px;
+      background-color: #444444;
+      transition: width 0.5s;
+    }
+
+    #icon-expand {
+      position: absolute;
+      bottom: 0.2rem;
+      right: 0.3rem;
+      font-size: 1.5rem;
+      z-index: 10;
+      color: white;
+    }
+  }
+}

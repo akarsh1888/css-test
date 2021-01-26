@@ -1,0 +1,74 @@
+/* Utility Classes */
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+
+.py-1 {
+  padding: 0.5rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.my-1 {
+  margin: 0.5rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+%btn-shared {
+  display: inline-block;
+  //   padding: 0.8rem 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  height: 40.61px;
+  width: 113.95px;
+  border-radius: 4px;
+  border: 1px solid #9b9b9b;
+  box-shadow: 2px 2px 5px rgba(136, 136, 136, 0.35);
+  font-size: 1.1rem;
+}
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #fff;
+    background: #444444;
+  }
+  &-light {
+    @extend %btn-shared;
+    border: 3px solid #444444;
+    color: #444444;
+    background-color: #fff;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+  }
+}
